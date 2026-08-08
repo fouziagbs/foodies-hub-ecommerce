@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Foodies Hub | Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            🍔 Foodies Hub
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu-details.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="cart.html">
+                    🛒 Cart
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+</header>
+
+
+
+<section class="menu-banner">
+
+    <h1>Our Delicious Menu</h1>
+
+    <p>
+        Fresh burgers, crispy fries, pizzas and fast food made with love.
+    </p>
+
+</section>
+
+
+
+<section class="products-container">
+
+
+<!-- Product 1 -->
+
+<div class="product-card">
+
+<img src="images/3757723-7c4020ccc47240138323b9bc5b730e8d.jpg" 
+alt="Classic Beef Burger">
+
+<h2>Classic Beef Burger</h2>
+
+<span class="category">
+Burger
+</span>
+
+<p>
+Juicy beef patty with cheese, lettuce and special sauce.
+</p>
+
+<h3>£6.99</h3>
+
+<div class="rating">
+⭐⭐⭐⭐⭐
+</div>
+
+<button onclick="addToCart('Classic Beef Burger',6.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+<!-- Product 2 -->
+
+<div class="product-card">
+
+<img src="images/Crispiest-buttermilk-fried-chicken-burgers-90854e5.jpg" 
+alt="Chicken Burger">
+
+<h2>Crispy Chicken Burger</h2>
+
+<span class="category">
+Burger
+</span>
+
+<p>
+Crunchy chicken fillet with fresh vegetables and sauce.
+</p>
+
+<h3>£5.99</h3>
+
+<div class="rating">
+⭐⭐⭐⭐
+</div>
+
+<button onclick="addToCart('Crispy Chicken Burger',5.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+<!-- Product 3 -->
+
+<div class="product-card">
+
+<img src="images/2023_retail_double-stack-cheeseburger_600x600.jpg" 
+alt="Double Cheese Burger">
+
+<h2>Double Cheese Burger</h2>
+
+<span class="category">
+Premium Burger
+</span>
+
+<p>
+Double beef patties with melted cheese and BBQ sauce.
+</p>
+
+<h3>£8.99</h3>
+
+<div class="badge">
+Best Seller
+</div>
+
+<button onclick="addToCart('Double Cheese Burger',8.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+<!-- Product 4 -->
+
+<div class="product-card">
+
+<img src="images/veggie.jpg"
+alt="Vegetarian Burger">
+
+<h2>Veggie Delight Burger</h2>
+
+<span class="category">
+Vegetarian
+</span>
+
+<p>
+Healthy vegetable patty with fresh salad.
+</p>
+
+<h3>£5.49</h3>
+
+<button onclick="addToCart('Veggie Delight Burger',5.49)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+<!-- Product 5 -->
+
+<div class="product-card">
+
+<img src="images/Sweet-and-Spicy-Sriracha-Chicken-Wings-0-6.jpg"
+alt="Chicken Wings">
+
+<h2>Spicy Chicken Wings</h2>
+
+<span class="category">
+Sides
+</span>
+
+<p>
+Crispy wings coated with spicy flavour.
+</p>
+
+<h3>£4.99</h3>
+
+<div class="badge">
+Popular
+</div>
+
+<button onclick="addToCart('Spicy Chicken Wings',4.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 6 -->
+
+<div class="product-card">
+
+<img src="images/loaded fries.jpg"
+alt="French Fries">
+
+<h2>Loaded French Fries</h2>
+
+<span class="category">
+Sides
+</span>
+
+<p>
+Golden fries topped with cheese and sauces.
+</p>
+
+<h3>£3.99</h3>
+
+
+<button onclick="addToCart('Loaded French Fries',3.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 7 -->
+
+<div class="product-card">
+
+<img src="images/pizza.jpg"
+alt="Pepperoni Pizza">
+
+<h2>Pepperoni Pizza</h2>
+
+<span class="category">
+Pizza
+</span>
+
+<p>
+Freshly baked pizza with cheese and pepperoni.
+</p>
+
+<h3>£9.99</h3>
+
+<button onclick="addToCart('Pepperoni Pizza',9.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 8 -->
+
+<div class="product-card">
+
+<img src="images/hot dog.jpg"
+alt="Hot Dog">
+
+<h2>Classic Hot Dog</h2>
+
+<span class="category">
+Fast Food
+</span>
+
+<p>
+American style hot dog with special toppings.
+</p>
+
+<h3>£4.50</h3>
+
+<button onclick="addToCart('Classic Hot Dog',4.50)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 9 -->
+
+<div class="product-card">
+
+<img src="images/images.jpg"
+alt="Chocolate Milkshake">
+
+<h2>Chocolate Milkshake</h2>
+
+<span class="category">
+Drinks
+</span>
+
+<p>
+Creamy chocolate milkshake with whipped cream.
+</p>
+
+<h3>£3.50</h3>
+
+
+<button onclick="addToCart('Chocolate Milkshake',3.50)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 10 -->
+
+<div class="product-card">
+
+<img src="images/homemade-chicken-nuggets-3.jpg"
+alt="Chicken Nuggets">
+
+<h2>Chicken Nuggets</h2>
+
+<span class="category">
+Kids Menu
+</span>
+
+<p>
+Crispy golden chicken nuggets.
+</p>
+
+<h3>£4.25</h3>
+
+<button onclick="addToCart('Chicken Nuggets',4.25)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 11 -->
+
+<div class="product-card">
+
+<img src="images/wrap.jpg"
+alt="Chicken Wrap">
+
+<h2>Grilled Chicken Wrap</h2>
+
+<span class="category">
+Wraps
+</span>
+
+<p>
+Grilled chicken with fresh salad and sauce.
+</p>
+
+<h3>£6.49</h3>
+
+<button onclick="addToCart('Grilled Chicken Wrap',6.49)">
+Add To Cart
+</button>
+
+</div>
+
+
+
+
+
+<!-- Product 12 -->
+
+<div class="product-card">
+
+<img src="images/family pack.jpg"
+alt="Family Combo">
+
+<h2>Family Feast Combo</h2>
+
+<span class="category">
+Combo Meal
+</span>
+
+<p>
+Burgers, fries and drinks for family sharing.
+</p>
+
+<h3>£19.99</h3>
+
+<div class="badge">
+Special Offer
+</div>
+
+<button onclick="addToCart('Family Feast Combo',19.99)">
+Add To Cart
+</button>
+
+</div>
+
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Foodies Hub | Fresh Fast Food Restaurant
+</p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
